@@ -1,0 +1,643 @@
+:root {
+    --black:black;
+    --blue:blue;
+    --red:red;
+    --gradient:linear-gradient(90deg, var(--blue), var(--red));
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background: var(--blue);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 1000;
+    padding: 2rem 9%;
+    border-bottom: .1rem solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: bolder;
+    color: white;
+    font-size: 2.5rem;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: white;
+}
+
+header .navbar a:hover {
+    color: var(--blue);
+}
+
+#menu-bar {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    padding: .7rem 3rem;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--gradient);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.home {
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.home .content {
+    padding-top: 5rem;
+    width: 70rem;
+    margin: 0 auto;
+}
+
+.home .content h3 {
+    font-size: 6.5rem;
+    color: var(--gradient);
+    padding: 1rem 0;
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    color: var(--gradient);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.home .swiper {
+    width: 900px;
+    height: 600px;
+    padding: 50px;
+  }
+
+  .home .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+  }
+
+  .home .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading {
+    text-align: center;
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 5rem;
+    padding: 1rem;
+  }
+
+  .features .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .features .box-container .box {
+    margin: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    background: var(--gradient);
+    padding: 1rem;
+    flex: 1 1 30rem;
+    cursor: pointer;
+  }
+
+  .features .box-container .box i {
+    color: var(--black);
+    font-size: 5rem;
+    padding: 1rem;
+  }
+
+  .features .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.4rem;
+    padding: 1rem;
+  }
+
+  .features .box-container .box p {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .features .box-container .box:hover {
+    transform: scale(1.2);
+  }
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 3.5rem;
+}
+
+.about .row .content p {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+
+.pricing .box-container .box {
+    flex: 1 1 33rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+    border: 1rem solid rgba(0, 0, 0, 3);
+}
+
+.pricing .box-container .box .price {
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.pricing .box-container .box span {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.pricing .box-container .box h3 {
+    color: white;
+    background: black;
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+}
+
+.pricing .box-container .box ul {
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: .1rem solid var(--blue);
+}
+
+.pricing .box-container .box ul li {
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: black;
+}
+
+.contact {
+    background: linear-gradient(white 50%, var(--black) 50.1%);
+}
+
+.contact form {
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 1);
+}
+
+.contact form .inputBox {
+    position: relative;
+}
+
+.contact form .inputBox input, .contact form .inputBox textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, 3);
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.contact form .inputBox textarea {
+    resize: none;
+    height: 15rem;
+}
+
+.contact form .inputBox input:focus,
+.contact form .inputBox textarea:focus {
+    border-color: var(--blue);
+}
+
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:valid ~ label {
+    top: -.4rem;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.contact form .inputBox label {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+}
+
+.footer {
+    text-align: center;
+    background: var(--black);
+}
+
+.footer .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: white;
+    color: var(--black);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: .3rem;
+}
+.footer .share a:hover {
+    color: white;
+    background: var(--gradient);
+}
+
+.footer .credit {
+    color: white;
+    padding: 2.5rem 1rem;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+    
+    header .logo {
+        font-size: 2rem;
+    }
+    
+    header .navbar a {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    
+    #menu-bar {
+        display: block;
+    }
+    
+    .home .content {
+        width: 90%;
+    }
+    
+    .home .content h3 {
+        font-size: 4rem;
+    }
+    
+    .home .content p {
+        font-size: 1.5rem;
+    }
+    
+    .home .swiper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .home .swiper-slide {
+        width: 100%;
+        height: auto;
+    }
+    
+    .home .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .heading {
+        font-size: 3rem;
+    }
+    
+    .features .box-container .box {
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+    
+    .features .box-container .box i {
+        font-size: 3rem;
+    }
+    
+    .features .box-container .box h3 {
+        font-size: 2rem;
+    }
+    
+    .features .box-container .box p {
+        font-size: 1.2rem;
+    }
+    
+    .about .row .image,
+    .about .row .content {
+        flex: 1 1 100%;
+    }
+    
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+    
+    .about .row .content p {
+        font-size: 1.2rem;
+    }
+    
+    .pricing .box-container .box {
+        flex: 1 1 100%;
+    }
+    
+    .pricing .box-container .box .price {
+        font-size: 3rem;
+    }
+    
+    .pricing .box-container .box span {
+        font-size: 1.5rem;
+    }
+    
+    .pricing .box-container .box h3 {
+        font-size: 2.5rem;
+    }
+    
+    .pricing .box-container .box ul li {
+        font-size: 1.2rem;
+    }
+    
+    .contact form {
+        padding: 1rem;
+    }
+    
+    .contact form .inputBox input,
+    .contact form .inputBox textarea {
+        font-size: 1.2rem;
+    }
+    
+    .contact form .inputBox label {
+        font-size: 1.2rem;
+        top: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 1rem 3%;
+    }
+    
+    header .logo {
+        font-size: 1.8rem;
+    }
+    
+    header .navbar a {
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+    }
+    
+    #menu-bar {
+        display: block;
+        font-size: 2rem;
+    }
+    
+    .home .content {
+        width: 100%;
+    }
+    
+    .home .content h3 {
+        font-size: 3.5rem;
+    }
+    
+    .home .content p {
+        font-size: 1.2rem;
+    }
+    
+    .home .swiper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .home .swiper-slide {
+        width: 100%;
+        height: auto;
+    }
+    
+    .home .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+    
+    .features .box-container .box {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+    
+    .features .box-container .box i {
+        font-size: 2.5rem;
+    }
+    
+    .features .box-container .box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .features .box-container .box p {
+        font-size: 1rem;
+    }
+    
+    .about .row .image,
+    .about .row .content {
+        flex: 1 1 100%;
+    }
+    
+    .about .row .content h3 {
+        font-size: 2rem;
+    }
+    
+    .about .row .content p {
+        font-size: 1rem;
+    }
+    
+    .pricing .box-container .box {
+        flex: 1 1 100%;
+    }
+    
+    .pricing .box-container .box .price {
+        font-size: 2.5rem;
+    }
+    
+    .pricing .box-container .box span {
+        font-size: 1.2rem;
+    }
+    
+    .pricing .box-container .box h3 {
+        font-size: 2rem;
+    }
+    
+    .pricing .box-container .box ul li {
+        font-size: 1rem;
+    }
+    
+    .contact form {
+        padding: 0.5rem;
+    }
+    
+    .contact form .inputBox input,
+    .contact form .inputBox textarea {
+        font-size: 1rem;
+    }
+    
+    .contact form .inputBox label {
+        font-size: 1rem;
+        top: 1rem;
+    }
+}
+
+#menu-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1100;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Add this CSS to initially hide the mobile menu */
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    z-index: 1000;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 2rem;
+}
+
+#mobile-menu ul li {
+    margin-bottom: 1rem;
+}
+
+#mobile-menu ul li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Add this CSS to show the mobile menu when the button is clicked */
+#menu-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    #menu-button {
+        display: block;
+    }
+
+    /* Add this CSS to display the mobile menu on small screens */
+    #mobile-menu.active {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
